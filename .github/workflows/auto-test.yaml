@@ -1,9 +1,6 @@
 name: Node.js CI
 
-on:
-  branches: 
-    - develop
-    - master
+on: pull_request
 
 jobs:
   build:
