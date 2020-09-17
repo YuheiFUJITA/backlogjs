@@ -2,7 +2,11 @@
   "name": "backlogjs",
   "version": "0.0.1",
   "description": "Backlog APIのJavaScriptライブラリ",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": "https://github.com/YuheiFUJITA/backlogjs.git",
   "author": "Yuhei FUJITA <contact@fujita.dev>",
   "license": "MIT",
@@ -10,7 +14,10 @@
     "lint": "eslint --fix --ext .js,.ts src/**/*",
     "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/node": "^14.10.1",
+    "axios": "^0.20.0"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.13",
     "@typescript-eslint/eslint-plugin": "^4.1.0",
